@@ -15,6 +15,8 @@ def call(Map params) {
       stage('Inner Stage 1') {
         println "Inner Stage 1"
         println params.get("param2")
+        println lib
+        ci.sharedFunc()
         lib.ci.sharedFunc()
       }
     }
