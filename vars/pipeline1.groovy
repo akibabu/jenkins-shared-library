@@ -13,6 +13,7 @@ def call(Map params) {
                 steps {
                   println "Outer Stage 1"
                   println params.get("param1")
+                  func()
                 }
             }
             stage('Outer Stage 2') {
@@ -21,6 +22,7 @@ def call(Map params) {
                         steps {
                             println "Inner Stage 1"
                             println params.get("param2")
+                            ci.sharedFunc()
                         }
                     }
                 }
