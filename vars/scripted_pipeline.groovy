@@ -1,5 +1,3 @@
-def lib = library("cilib")
-
 def func() {
   println "func()"
 }
@@ -15,8 +13,8 @@ def call(Map params) {
       stage('Inner Stage 1') {
         println "Inner Stage 1"
         println params.get("param2")
+        lib = library("cilib")
         println lib
-        ci.sharedFunc()
         lib.ci.sharedFunc()
       }
     }
