@@ -1,4 +1,4 @@
-import jp.akibabu
+import jp.akibabu.ci
 
 def ci = new jp.akibabu.Ci()
 
