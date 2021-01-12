@@ -1,6 +1,4 @@
-import jp.akibabu.ci
-
-def ci = new Ci()
+def lib = library("cilib")
 
 def func() {
   println "func()"
@@ -19,7 +17,7 @@ def call(Map params) {
         steps {
           println "Inner Stage 1"
           println params.get("param2")
-          //ci.sharedFunc()
+          lib.ci.sharedFunc()
         }
       }
     }
