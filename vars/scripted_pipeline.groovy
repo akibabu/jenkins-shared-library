@@ -1,6 +1,6 @@
 import jp.akibabu.ci
 
-def ci = new jp.akibabu.Ci()
+def ci = new Ci()
 
 def func() {
   println "func()"
