@@ -1,5 +1,3 @@
-@Library('cilib') _
-
 def func() {
   println "func()"
 }
