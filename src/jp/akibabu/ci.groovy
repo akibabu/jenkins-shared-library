@@ -1,7 +1,6 @@
 package jp.akibabu
 
-class ci {
-
+class Ci {
   def checkout() {
     checkout([
       $class: 'GitSCM',
