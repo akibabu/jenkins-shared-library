@@ -1,3 +1,5 @@
+import jp.akibabu
+
 def ci = new jp.akibabu.Ci()
 
 def func() {
