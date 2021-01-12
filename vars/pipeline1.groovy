@@ -2,7 +2,7 @@ def func() {
   println "func()"
 }
 
-def sharedPipeline(Map params) {
+def call(Map params) {
     pipeline {
         agent any
         options {
